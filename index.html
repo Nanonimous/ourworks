@@ -40,7 +40,7 @@
   <!-- ── HERO ─────────────────────────────────────────────────── -->
   <section class="hero" id="hero">
     <p class="hero-eyebrow">Presented for</p>
-    <h1 class="hero-title">Hello,<br /><span class="hero-accent">[Client Name].</span></h1>
+    <h1 class="hero-title">Hello,<br /><span class="hero-accent">Danush Raja.</span></h1>
     <p class="hero-sub">We've put together this space especially for you — a curated look at the work we've crafted with care, creativity, and precision.</p>
 
     <!-- ── Personal note card ── -->
@@ -56,6 +56,27 @@
 
     <div class="hero-line"></div>
   </section>
+  <!-- ── ABOUT ─────────────────────────────────────────────────── -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="about-text-col">
+        <p class="hero-eyebrow" style="margin-bottom:14px">Who we are</p>
+        <p class="about-desc">We are a team of passionate freelance developers dedicated to building modern, scalable, and user-friendly web applications. With 2–3 years of hands-on experience, we deliver customized digital solutions that combine quality, performance, and great user experience.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-number">2–3</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- ── PROJECT GRID ──────────────────────────────────────────── -->
   <main class="projects-section" id="projects">
@@ -75,8 +96,19 @@
   <div class="modal-overlay" id="imageModal" role="dialog" aria-modal="true" aria-label="Image preview">
     <div class="modal-box modal-image-box">
       <button class="modal-close" id="closeImageModal" aria-label="Close">&times;</button>
+
+      <!-- Navigation arrows (shown only for multi-image) -->
+      <button class="modal-nav modal-nav-prev" id="modalNavPrev" aria-label="Previous image"
+        style="display:none">&#8249;</button>
+      <button class="modal-nav modal-nav-next" id="modalNavNext" aria-label="Next image"
+        style="display:none">&#8250;</button>
+
       <img src="" alt="" id="modalImage" class="modal-full-img" />
-      <p class="modal-image-caption" id="modalImageCaption"></p>
+
+      <div class="modal-footer">
+        <p class="modal-image-caption" id="modalImageCaption"></p>
+        <span class="modal-img-counter" id="modalImgCounter"></span>
+      </div>
     </div>
   </div>
 
